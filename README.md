@@ -1,1 +1,1 @@
-# java_project_cafe
+# Projekt aplikacji do zarządzania kawiarnią
