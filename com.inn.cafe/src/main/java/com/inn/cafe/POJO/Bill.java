@@ -6,6 +6,10 @@ import java.io.Serializable;
 import javax.persistence.*;
 import javax.persistence.criteria.CriteriaBuilder;
 
+@NamedQuery(name = "Bill.getAllBills", query="select b from Bill b order by b.id desc")
+
+@NamedQuery(name = "Bill.getBillByUserName", query = "select b from Bill b where b.createdBy=:username order by b.id desc")
+
 @Data
 @Entity
 @DynamicUpdate
