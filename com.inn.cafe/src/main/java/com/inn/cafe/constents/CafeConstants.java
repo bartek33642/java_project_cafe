@@ -10,6 +10,8 @@ public class CafeConstants{
 
 //    public static final String STORE_LOCATION = "C:\\Users\\x\\Desktop\\CAFE11\\java_project_cafe\\cafe-stored-files";
 
-    public static final String STORE_LOCATION = "C:\\Users\\barte\\Desktop\\java_project_cafe\\cafe-stored-files";
+//    public static final String STORE_LOCATION = "C:\\Users\\barte\\Desktop\\java_project_cafe\\cafe-stored-files";
+
+    public static final String STORE_LOCATION = "C:\\Users\\Wiktor\\Desktop\\java_project_cafe\\cafe-stored-files";
 
 }
