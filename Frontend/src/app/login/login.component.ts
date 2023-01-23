@@ -43,6 +43,7 @@ export class LoginComponent implements OnInit {
       localStorage.setItem('token', response.token);
       this.router.navigate(['/cafe/dasboard']); 
     }, (error) => {
+      this.ngxService.stop();
       if(error.error?.message){
         this.responseMessage = error.error?.message;
       }
