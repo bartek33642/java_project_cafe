@@ -16,8 +16,8 @@ export class ProductComponent implements OnInit {
   onAddProduct = new EventEmitter();
   onEditProduct = new EventEmitter();
   productForm:any = FormGroup;
-  dialogAction:any = "Add";
-  action:any = "Add";
+  dialogAction:any = 'Add';
+  action:any = 'Add';
   responseMessage:any;
   categorys:any = [];
 

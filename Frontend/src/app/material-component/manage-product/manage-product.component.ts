@@ -58,7 +58,7 @@ export class ManageProductComponent implements OnInit {
   handleAddAction(){
     const dialogConfig = new MatDialogConfig();
     dialogConfig.data = {
-      action: "Add"
+      action: 'Add'
     };
     dialogConfig.width = "850px";
     const dialogRef = this.dialog.open(ProductComponent, dialogConfig);
