@@ -18,10 +18,10 @@ export class ManageOrderComponent implements OnInit {
   displayedColumns: string[] = ['name', 'category', 'price', 'quantity', 'total', 'edit'];
   dataSource:any = [];
   manageOrderForm: any = FormGroup;
-  categorys: any = [];
-  products: any = [];
+  categorys:any = [];
+  products:any = [];
   price:any;
-  totalAmount: number = 0;
+  totalAmount:number = 0;
   responseMessage:any;
 
   constructor(private formBuilder:FormBuilder,
@@ -104,7 +104,7 @@ export class ManageOrderComponent implements OnInit {
     if(temp>0){
       this.manageOrderForm.controls['total'].setValue(this.manageOrderForm.controls['quantity'].value * this.manageOrderForm.controls['price'].value);
     }
-    else if(temp!=''){
+    else if(temp != ''){
       this.manageOrderForm.controls['quantity'].setValue('1');
       this.manageOrderForm.controls['total'].setValue(this.manageOrderForm.controls['quantity'].value *
         this.manageOrderForm.controls['price'].value);
@@ -112,7 +112,8 @@ export class ManageOrderComponent implements OnInit {
   }
 
   validateProductAdd(){
-    if(this.manageOrderForm.controls['total'].value===0 || this.manageOrderForm.controls['total'].value===null || this.manageOrderForm.controls['quantity'].value <= 0){
+    if(this.manageOrderForm.controls['total'].value===0 || this.manageOrderForm.controls['total'].value===null ||
+      this.manageOrderForm.controls['quantity'].value <= 0){
     return true;
     }
     else
@@ -161,7 +162,7 @@ export class ManageOrderComponent implements OnInit {
     }
     this.ngxService.start();
     this.billService.generateReport(data).subscribe((response:any)=>{
-      this.downloadFile(response.uuid);
+      this.downloadFile(response?.uuid);
       this.manageOrderForm.reset();
       this.dataSource=[];
       this.totalAmount=0;
