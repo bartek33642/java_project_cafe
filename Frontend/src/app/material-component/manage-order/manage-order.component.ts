@@ -6,7 +6,7 @@ import {SnackbarService} from "../../services/snackbar.service";
 import {BillService} from "../../services/bill.service";
 import {NgxUiLoaderService} from "ngx-ui-loader";
 import {GlobalConstants} from "../../shared/global-constants";
-import {saveAs} from "file-saver";
+import {saveAs} from 'file-saver';
 
 @Component({
   selector: 'app-manage-order',
