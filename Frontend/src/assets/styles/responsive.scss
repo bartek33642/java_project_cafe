@@ -67,6 +67,7 @@ File: scss
 
 @media(min-width:768px) {
     .navbar-header {
+        background-color: #d4a170;
         width: 225px;
         flex-shrink:0;
         .navbar-brand {
@@ -83,6 +84,7 @@ File: scss
 
 @media(max-width:767px) {
     .mat-toolbar-single-row{
+        background-color: #d4a170;
         height: 64px!important;
     }
     .d-flex{

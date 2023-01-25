@@ -2,7 +2,9 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
+  .mat-toolbar.mat-primary{
+    background-color:#d4a170;
+  }
   //responsibe table
   @media(max-width: 800px) {
     .responsive_table {
